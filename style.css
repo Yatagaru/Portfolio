@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+html {
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+h1 {
+  color: rgb(255, 128, 85);
+}
+.cabecalho {
+  background-color: rgb(20, 14, 14);
+  padding: 20px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: first-baseline;
+}
+.grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 50px;;
+}
+p, h2 {
+  text-align: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(149, 139, 136)
+}
+.menu a{
+   text-decoration: none;
+}
+.menu a:link{
+  color:royalblue
+}
+.menu a:active{
+  color:rgb(255, 128, 85);
+}
+.menu{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.item {
+  position: relative;
+}
+.item p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-55%);
+  opacity: 0;
+  font-size: 30px;
+}
+.item:hover p{
+    opacity: 1;
+}
+.item:hover img{
+  opacity: 0.33;
+  cursor: pointer;
+}
+.item img {
+  width: 500px;
+  height: 500px;
+  border-style: ridge;
+  border-width: 10px;
+  border-color:rgb(20, 14, 14);
+  border-radius: 20px;
+  margin: 10px;
+}
+footer{
+  text-align: center;
+  background-color: rgb(149, 139, 136);
+  width: 100%;
+  display: center;
+  position: sticky;
+  bottom: 0;
+}
+#TS {
+  width: 600px;
+}
+#FC {
+  width: 650px;
+}
+#TD {
+  width: 700px;
+}
